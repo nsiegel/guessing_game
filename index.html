@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" media="screen">
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
   </head>
   <body class="container">
     <div class="jumbotron">
@@ -17,17 +18,21 @@
       <div class="row">
         <div class="col-xs-4 col-xs-offset-4">
           <div class="input-group input-group-lg">
-            <input type="text" class="form-control" placeholder="Enter guess">
+            <input id="number" type="text" class="form-control" placeholder="Enter guess">
             <span class="input-group-btn">
-              <button class="btn btn-primary" type="button">Guess!</button>
+              <button id="guess-btn" class="btn btn-primary" type="button">Guess!</button>
             </span>
           </div>
         </div>
       </div>
       <br>
       <div class="row">
+          <p id="output"></p>
+      </div>
+      <br>
+      <div class="row">
         <div class="col-xs-2 col-xs-offset-5">
-          <button class="btn-lg btn-primary" type="button">Reset!</button>
+          <button id="reset" class="btn-lg btn-primary" type="button">Reset!</button>
         </div>
       </div>
     </div>
